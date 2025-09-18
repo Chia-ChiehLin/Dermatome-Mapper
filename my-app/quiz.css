@@ -1,0 +1,166 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #2c3e50;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg, #dbeafe, #b3cde0, #a2b9bc, #e6e6fa);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#quiz {
+  width: 100%;
+  max-width: none;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2c3e50;
+  margin-top: -48px;
+  margin-left: -60px;
+}
+
+#quiz > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1300px;
+  gap: 2rem;
+}
+
+#menu {
+  flex-shrink: 0;
+  width: auto;
+}
+
+#title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #e0f3db, #b0c4ff);
+  border: 3px solid #0b2e68;
+  border-radius: 25px;
+  padding: 15px 30px;
+  margin-top: 1.5rem;
+  display: block;
+margin-left: 2px;
+}
+
+#header {
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.quiz-content {
+  background-color: rgb(209, 244, 255);
+  border: 2px solid #0b2e68;
+  border-radius: 8px;
+  padding: 2%;
+  max-width: 1100px;
+}
+
+.question {
+  margin-bottom: 1.5rem;
+}
+
+.question h3 {
+  color: #34495e;
+}
+
+label {
+  display: flex; /* Changed to flex for alignment */
+  align-items: center; /* Center radio button and text vertically */
+  width: flex; /* Reduced width to make buttons less wide */
+  padding: 1rem; /* Larger padding for bigger buttons */
+  margin: 0.05rem 0; /* Spacing between buttons */
+  background: white; /* Matches title gradient */
+  border: 2px solid #0b2e68; /* Matches theme border */
+  border-radius: 8px; /* Matches theme radius */
+  color: #2c3e50; /* Matches title text color */
+  font-size: 1.1em; /* Slightly larger text */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+label:hover {
+  background: linear-gradient(to right, #d0e3cb, #a0b4ef); /* Slightly darker gradient on hover */
+}
+
+input[type="radio"] {
+  margin-right: 1rem; /* Space between radio and text */
+  transform: scale(1.5); /* Larger radio button */
+}
+
+button[type="submit"] {
+  background-color: grey;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+#result {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}

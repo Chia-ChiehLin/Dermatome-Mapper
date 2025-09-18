@@ -1,0 +1,75 @@
+#menu {
+    background-color: lightblue;
+    border: 1px solid black; 
+    padding: 10px; /* Adds padding of 10 pixels inside the menu */
+    width: 220px; /* Sets the width of the menu to 220 pixels */
+    height: 685px; /* Sets the initial height of the menu to 685 pixels */
+    text-align: center; /* Centers the text within the menu */
+    font-size: 16px; /* Sets the font size to 16 pixels */
+    border-radius: 8px; /* Rounds the corners of the menu with an 8-pixel radius */
+    transition: height 0.3s ease, opacity 0.3s ease; /* Animates height and opacity changes */
+    overflow: hidden; /* Hides any content that overflows the menu's boundaries */
+    margin-right: 5px; /* Adds a right margin of 5 pixels */
+}
+
+#menu.collapsed {
+    height: 0; /* Collapses the height to 0 when the menu is collapsed */
+    opacity: 0; /* Sets the opacity to 0 when the menu is collapsed */
+    padding: 10px; /* Maintains padding of 10 pixels when collapsed */
+    width: 220px; /* Ensures width remains 220 pixels when collapsed */
+}
+
+/* Style the button container */
+#menu .button-container {
+    display: flex; /* Uses flexbox layout for the button container */
+    flex-direction: column; /* Stacks buttons vertically */
+    gap: 5px; /* Adds a gap of 5 pixels between buttons */
+    margin-right: 5px; /* Adds a right margin of 5 pixels */
+}
+
+#menu button {
+    /* Button styling */
+    background-color: grey; 
+    border: 1px solid whitesmoke;
+    padding: 30px; /* Adds padding of 30 pixels inside the button */
+    font-family: inherit; /* Inherits the font family from the parent element */
+    font-size: 16px; /* Sets the font size of the button text to 16 pixels */
+    transition: background-color 0.2s; /* Smooth transition for background color changes */
+    width: 220px; /* Sets the width of the button to 220 pixels */
+    border-radius: 8px; /* Rounds the edges of the button with an 8-pixel radius */
+}
+
+#menu button:hover {
+    background-color: lightgrey; 
+}
+
+.toggle-button {
+    background-color: grey; 
+    border: 1px solid whitesmoke; 
+    padding: 10px; /* Adds padding of 10 pixels inside the toggle button */
+    width: 240px; /* Sets the width of the toggle button to 240 pixels */
+    font-family: inherit; 
+    font-size: 16px; /* Sets the font size of the toggle button text to 16 pixels */
+    transition: background-color 0.2s; /* Smooth transition for background color changes */
+    border-radius: 2px; /* Rounds the edges of the toggle button with a 2-pixel radius */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    margin-bottom: 5px; /* Adds space between the toggle button and the menu */
+    margin-right: 5px; /* Adds a right margin of 5 pixels */
+    margin-top: 20px; /* Adds a top margin of 20 pixels to drop the button down */
+}
+
+.toggle-button:hover {
+    background-color: lightgrey; /* Changes the background color to light grey when hovered */
+}
+
+.menu-wrapper {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+#menu .button-container .disclaimer-button {
+    background-color: rgb(197, 114, 114);
+    border-color: whitesmoke;
+  }

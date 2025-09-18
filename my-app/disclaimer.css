@@ -1,0 +1,128 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Added custom properties for easy width and height editing */
+  --disclaimer-width: 1000px; /* Default width */
+  --disclaimer-height: auto; /* Default height, can be set to a fixed value like 400px */
+}
+
+#disclaimer p {
+  background-color: rgb(209, 244, 255);
+  border: 2px solid #0b2e68;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+  padding: 4%; /* Increased previously to make it bigger around text */
+  max-width: none; /* Removed max-width to use custom width */
+  width: var(--disclaimer-width); /* Applied custom width variable */
+  height: var(--disclaimer-height); /* Applied custom height variable */
+  margin: 0 auto; /* Centered the paragraph horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for modal-like depth */
+}
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background: linear-gradient(45deg, #dbeafe, #b3cde0, #a2b9bc, #e6e6fa);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  #disclaimer {
+    width: 100%;
+    max-width: none;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2c3e50;
+    margin-top: -48px; /* Changed from -30px to move everything up 5px */
+    margin-left: -60px; /* Changed from -30px to move everything left 5px */
+  }
+  
+  #disclaimer > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1300px;
+    gap: 2rem;
+  }
+  
+  #menu {
+    flex-shrink: 0;
+    width: auto;
+  }
+  
+  #title {
+    text-align: center;
+    font-size: 2.5rem; /* slightly smaller than before */
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to right, #e0f3db, #b0c4ff);
+    border: 3px solid #0b2e68;
+    border-radius: 25px;
+    padding: 15px 30px;
+    margin-top: 1.5rem;
+    display: block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-right: -75px;
+  }
+  
+  #header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nerve Root Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <div id="quiz">
+      <div style="display: flex; flex-direction: row;">
+        <div id="menu"></div>
+        <div>
+          <div id="header">
+            <h1 id="title">Nerve Root Quiz</h1>
+          </div>
+          <div class="quiz-content">
+            <form id="quizForm">
+              <div class="question">
+                <h3>1. Which nerve root is likely affected in a patient experiencing foot drop and numbness on the anterior foot including between 1st and 2nd toes?</h3>
+                <label><input type="radio" name="q1" value="L3" /> L3</label><br />
+                <label><input type="radio" name="q1" value="L4" /> L4</label><br />
+                <label><input type="radio" name="q1" value="L5" /> L5</label><br />
+                <label><input type="radio" name="q1" value="S1" /> S1</label>
+              </div>
+
+              <div class="question">
+                <h3>2. Which dermatome is affected in a patient with decreased sensation to the long finger?</h3>
+                <label><input type="radio" name="q2" value="C6" /> C6</label><br />
+                <label><input type="radio" name="q2" value="C7" /> C7</label><br />
+                <label><input type="radio" name="q2" value="C8" /> C8</label><br />
+                <label><input type="radio" name="q2" value="T1" /> T1</label>
+              </div>
+
+              <div class="question">
+                <h3>3. Which nerve root is likely affected in a patient with diminished sensation to the anterior thigh and +1 patellar reflex?</h3>
+                <label><input type="radio" name="q3" value="L2" /> L2</label><br />
+                <label><input type="radio" name="q3" value="L3" /> L3</label><br />
+                <label><input type="radio" name="q3" value="L4" /> L4</label><br />
+                <label><input type="radio" name="q3" value="L5" /> L5</label>
+              </div>
+
+              <div class="question">
+                <h3>4. Which dermatome is affected in a patient with cervical disc herniation and numbness in ring and small fingers?</h3>
+                <label><input type="radio" name="q4" value="C6" /> C6</label><br />
+                <label><input type="radio" name="q4" value="C7" /> C7</label><br />
+                <label><input type="radio" name="q4" value="C8" /> C8</label><br />
+                <label><input type="radio" name="q4" value="T1" /> T1</label>
+              </div>
+
+              <div class="question">
+                <h3>5. What muscle grading score would a patient receive with hip flexor movement against gravity but no resistance?</h3>
+                <label><input type="radio" name="q5" value="2/5" /> 2/5</label><br />
+                <label><input type="radio" name="q5" value="3/5" /> 3/5</label><br />
+                <label><input type="radio" name="q5" value="4/5" /> 4/5</label><br />
+                <label><input type="radio" name="q5" value="5/5" /> 5/5</label>
+              </div>
+
+              <button type="submit">Submit Quiz</button>
+            </form>
+
+            <div id="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="quiz.js"></script>
+  </body>
+</html>

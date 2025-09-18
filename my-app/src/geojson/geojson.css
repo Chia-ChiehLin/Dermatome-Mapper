@@ -1,0 +1,8 @@
+/*
+ * This rule removes the outline from the GeoJSON path elements 
+ * when they are focused. Works in chrome, firefox, and edge.
+ * See https://stackoverflow.com/questions/710746/how-to-remove-border-outline-around-text-input-boxes-chrome
+*/
+path.leaflet-interactive:focus {
+    outline: none;
+}

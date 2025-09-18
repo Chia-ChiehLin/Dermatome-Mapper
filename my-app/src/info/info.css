@@ -1,0 +1,36 @@
+#info {
+    background-color: lightblue;
+    border: 1px solid black;
+    margin-right: 1rem;
+    margin-left: 8px;
+    padding: 10px;
+    height: 650px;
+    width: 440px;
+    max-width: 440px;
+    text-align: center; /* Title Position */
+    font-size: 16px;
+    border-radius: 8px; /* Round the edges of the info container */
+}
+
+/* Style the button container*/
+#info .button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 5px;
+}
+
+#info button {
+    /* Button styling */
+    background-color: grey;
+    border: 1px solid whitesmoke;
+    padding: 30px;
+    font-family: inherit;
+    font-size: 16px;
+    transition: background-color 0.2s;
+    width: 100%; /* Stretch to fill container */
+    border-radius: 8px; /* Rounded edges for buttons */
+}
+
+#info button:hover {
+    background-color: lightgrey;
+}
