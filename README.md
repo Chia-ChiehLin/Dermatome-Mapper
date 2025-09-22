@@ -1,3 +1,5 @@
+Link to the website: https://chia-chiehlin.github.io/Dermatome-Mapper/
+
 The Dermatome Mapper application is designed to assist physicians and help those learning about spinal nerve distribution
 in a more visually appealing way compared to using an online image. This app will include an interactive map of the human
 body’s dermatome, specifically looking at the lumbar nerves L1-L5.  When a specific spinal nerve is selected, important information
@@ -15,3 +17,4 @@ Steven Maki,
 Caleb Werdon,
 Melanie Frias,
 Chia Chieh Lin
+
